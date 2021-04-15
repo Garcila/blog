@@ -34,9 +34,6 @@ export default function Layout({children, home}) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <Link href='/posts/git-notes'>
-              <a>Git Notes</a>
-            </Link>
           </>
         ) : (
           <>
@@ -52,11 +49,6 @@ export default function Layout({children, home}) {
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href='/'>
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
           </>
         )}
       </header>
