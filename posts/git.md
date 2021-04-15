@@ -3,9 +3,6 @@ title: 'Git Notes'
 date: '2021-04-14'
 ---
 
-TODO: DOES NOT LOOK LIKE THE MARKDOWN PREVIEW I SEE IN VS CODE
-# Git Notes
-
 ## Git
 
 Install Git using oficial guides.
