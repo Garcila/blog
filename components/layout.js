@@ -9,7 +9,7 @@ export const siteTitle = 'Up In The Clouds';
 
 export default function Layout({children, home}) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <meta name='description' content='German Arcila Personal Blog' />
@@ -36,23 +36,23 @@ export default function Layout({children, home}) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
-          <>
-            <Link href='/'>
-              <a>
-                <Image
-                  priority
-                  src='/images/air_mountain.png'
-                  className={utilStyles.borderCircle}
-                  height={194}
-                  width={144}
-                  alt={name}
-                />
-              </a>
-            </Link>
-          </>
+          <Link href='/'>
+            <a>
+              <Image
+                priority
+                src='/images/air_mountain.png'
+                className={utilStyles.borderCircle}
+                height={194}
+                width={144}
+                alt={name}
+              />
+            </a>
+          </Link>
         )}
       </header>
-      <main>{children}</main>
+      <div className={styles.container}>
+        <main>{children}</main>
+      </div>
       {!home && (
         <div className={styles.backToHome}>
           <Link href='/'>
@@ -60,6 +60,6 @@ export default function Layout({children, home}) {
           </Link>
         </div>
       )}
-    </div>
+    </>
   );
 }

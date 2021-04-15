@@ -3,7 +3,6 @@ import {getAllPostIds, getPostData} from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
-import nightOwl from '../../styles/nightowl.module.css';
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -38,8 +37,3 @@ export default function Post({postData}) {
     </Layout>
   );
 }
-
-// <link
-// rel='stylesheet'
-// href='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/default.min.css'
-// ></link>

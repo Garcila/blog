@@ -6,8 +6,11 @@
 
 .header {
   display: flex;
+  justify-content: center;
   align-items: baseline;
   color: var(--color-primary-light);
+  background: linear-gradient(180deg, rgba(33, 42, 56, 1) 90%, rgba(41, 50, 65, 1) 100%);
+  padding: 2rem 4rem 1rem 2rem;
 }
 
 .backToHome {

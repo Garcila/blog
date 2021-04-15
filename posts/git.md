@@ -1,6 +1,7 @@
 ---
 title: 'Git Notes'
 date: '2021-04-14'
+spoiler: 'Introduction and common commands in Git'
 ---
 
 ## Git
