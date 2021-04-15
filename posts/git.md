@@ -1,4 +1,10 @@
-# Git - GitHub Notes
+---
+title: 'Git Notes'
+date: '2021-04-14'
+---
+
+TODO: DOES NOT LOOK LIKE THE MARKDOWN PREVIEW I SEE IN VS CODE
+# Git Notes
 
 ## Git
 
@@ -9,7 +15,7 @@ Follow the steps on the official website, [here](https://git-scm.com/book/en/v2/
 
 Associate account **name** and **email**.
 
-```js
+```bash
 git config --global user.name "Pepito Pepitas"
 git config --global user.email "pepito@pepitas.com"
 
@@ -22,7 +28,7 @@ git use.name
 
 A common flow when using git is:
 
-```js
+```bash
 // Initialize the repo.  Done only once 
 git init
 
@@ -38,14 +44,14 @@ git log
 
 To configure as default editor something different from **VIM**, in this case **VSCode**:
 
-```js
+```bash
 // command on a mac
 git config --global core.editor "code --wait"
 ```
 
 ## Git pretty logs - at least short
 
-```js
+```bash
 // will show the git log in a concise form
 git log --oneline
 ```
@@ -54,7 +60,7 @@ git log --oneline
 
 To add one or more files to the **previous** commit:
 
-```js
+```bash
 git commit -m 'some commit'
 git add <forgotten_file>
 git commit --amend
@@ -66,7 +72,7 @@ The process will open the previous commit message in the selected (configured) c
 
 Not everything should be committed.  Private files, operative system files and files that can be generated with your application (i.e node modules), should **NOT** be committed.
 
-```js
+```bash
 // create a file called .gitignore, and include the file and folders not to be committed
 
 .DS_Store
@@ -77,7 +83,7 @@ node_modules
 
 Head is where the branch is currently pointing.  It starts pointing to **master/main**.
 
-```js
+```bash
 // list all available branches
 
 git branch
@@ -87,7 +93,7 @@ git branch
 
 The current location of the **HEAD** determines where the branch is created.
 
-```js
+```bash
 // create a new branch
 git branch <name_of_branch>
 
@@ -95,7 +101,7 @@ git branch <name_of_branch>
 git switch <name_of_branch>
 ```
 
-```js
+```bash
 // create a new branch and switch to it
 git switch -c <name_of_branch>
 ```
@@ -106,7 +112,7 @@ Git **checkout** <name_of_branch> still exists, but it does more than switch and
 
 **Checkout** does more than **switch**, but when used to change branches it can be used just like **switch**.
 
-```js
+```bash
 // rename a branch.  Needs to be on the branch
 git checkout  <branch_to_checkout>
 ```
@@ -115,7 +121,7 @@ git checkout  <branch_to_checkout>
 
 Use the flag -d to delete a branch.  It should be fully merged not to lose information, if still want to delete use **--force**.  Renaming only works affects the current branch.
 
-```js
+```bash
 // delete a branch
 git branch  -d <name_of_branch>
 
@@ -127,7 +133,7 @@ git branch -m <new_name_of_branch>
 
 Merge from the **receiving** branch.
 
-```js
+```bash
 // switch to the branch  to merge into. In this case master
 git switch master
 git merge <name_of_the_branch_to_merge_into_master>
@@ -137,7 +143,7 @@ git merge <name_of_the_branch_to_merge_into_master>
 
 When there is a conflict, it will be displayed in the terminal.  Resolve the conflict in VSCode, then, **add** and **commit**.
 
-```js
+```bash
 git add
 git commit -m ‘<message>’
 // Errors will show.  Fix the errors in the code editor and then add and commit the fixed code
@@ -147,7 +153,7 @@ git commit -m ‘<message>’
 
 List not staged changes.
 
-```js
+```bash
 // with no additional options, it lists changes not staged… escape with ‘q’
 git diff
 ```
@@ -156,7 +162,7 @@ git diff
 
 Save changes in a branch to use later without having to commit them at this time.
 
-```js
+```bash
 // git stash saves the changes to use later on
 git stash  
 
