@@ -47,6 +47,25 @@ To configure as default editor something different from **VIM**, in this case **
 git config --global core.editor "code --wait"
 ```
 
+## Git add
+
+Stages files to commit.  There are several ways of doing this, but the most common are **git .**, **git -A** and **git -u**.
+
+```bash
+// to commit all files in the tree, regardless of the place you are running the command from.  
+// git -A is the same as git --all 
+git add -A
+
+// to commit all files in the current directory, use **git .**
+// it is similar to git -A, but it only applies for the directory
+// you are one.  
+git add .
+
+// to commit all modified, or deleted files but not new files.  
+// git -u is the same as git --update 
+git add -u
+```
+
 ## Git pretty logs - at least short
 
 ```bash
