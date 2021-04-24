@@ -4,17 +4,15 @@ date: '2021-04-24'
 spoiler: 'Nullish coalescing operator ??'
 ---
 
-## Nullish coalescing operator
-
 This operator is a newer addition to JavaScript, introduced in ES2020.
 
 It is denoted with two question marks  **??**.
 
-### Definition
+## Definition
 
 The **nullish coalescing operator** is a logical operator that takes two operands, and will return the right hand operand if the left side operand is **either null or undefined**
 
-### Name exploration
+## Name exploration
 
 The name can be broken down in two components:
 
@@ -22,7 +20,7 @@ The name can be broken down in two components:
 
 - **coalesce**, meaning to unite, to join force, to grow together
 
-### Comparable to the logical OR operator **||**
+## Comparable to the logical OR operator **||**
 
 It is similar to the OR operator, but unlike it it does not check for **falsy** values, but only **null** or **undefined**.
 
@@ -30,7 +28,7 @@ It is very useful as you may want to have falsy values, as part of your code, bu
 
 One good case for this behaviour is when getting a response from an API, it may wanted to have falsy values, but you'll rather have defaults applied if the information returned contains null or undefined.
 
-### Examples
+## Examples
 
 Lets used the ?? operator in different scenarios
 
@@ -79,11 +77,11 @@ console.log(emptyName ?? 'Pepito'); // ''
 console.log(emptyName || 'Pepito'); // 'Pepito'
 ```
 
-### Short-circuiting
+## Short-circuiting
 
 Short-circuiting means that the right hand operand is not evaluated if the left hand operand is not **null** or **undefined**
 
-### SyntaxError
+## SyntaxError
 
 As last point, it is important to note that the **nullish coalescing** operator can not be combined with AND and OR operators.  It will throw a SyntaxError
 
