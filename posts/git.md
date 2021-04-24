@@ -52,7 +52,8 @@ git config --global core.editor "code --wait"
 Stages files to commit.  There are several ways of doing this, but the most common are **git .**, **git -A** and **git -u**.
 
 ```bash
-// to commit all files in the tree, regardless of the place you are running the command from.  
+// to commit all files in the tree, regardless of the place you are
+// running the command from.  
 // git -A is the same as git --all 
 git add -A
 
