@@ -1,7 +1,7 @@
 ---
 title: '?? operator'
 date: '2021-04-24'
-spoiler: 'Nullish coalescing operator **??**'
+spoiler: 'Nullish coalescing operator ??'
 ---
 
 ## Nullish coalescing operator
