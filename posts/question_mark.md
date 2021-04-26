@@ -26,8 +26,6 @@ It is similar to the OR operator, but unlike it it does not check for **falsy** 
 
 It is very useful as you may want to have falsy values, as part of your code, but want to avoid null or undefined ones.  
 
-One good case for this behaviour is when getting a response from an API, it may wanted to have falsy values, but you'll rather have defaults applied if the information returned contains null or undefined.
-
 ## Examples
 
 Lets used the ?? operator in different scenarios
