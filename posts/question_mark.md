@@ -67,13 +67,13 @@ as the variable has been declared, but at the moment it is **undefined**.
 
 5. Our variable **emptyName** is an empty string, therefore it is a **falsy** value and the result of the console log using **??** will be the empty string.
 
-```js
-const emptyName = '';
-console.log(emptyName ?? 'Pepito'); // ''
+    ```js
+    const emptyName = '';
+    console.log(emptyName ?? 'Pepito'); // ''
 
-// with logical OE
-console.log(emptyName || 'Pepito'); // 'Pepito'
-```
+    // with logical OE
+    console.log(emptyName || 'Pepito'); // 'Pepito'
+    ```
 
 ## Short-circuiting
 
