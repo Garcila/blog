@@ -28,7 +28,7 @@ It is very useful as you may want to have falsy values, as part of your code, bu
 
 ## Examples
 
-Lets used the ?? operator in different scenarios
+Lets use the ?? operator in different scenarios
 
 1. In this example the result of the console log is **'Pepito'**
 as the variable has been declared, but at the moment it is **undefined**.
