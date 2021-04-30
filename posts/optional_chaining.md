@@ -4,7 +4,7 @@ date: '2021-04-29'
 spoiler: 'Optional chaining operator ?.'
 ---
 
-Operator added to JavaScript in ES2020.
+The **Optional Chaining** operator added to JavaScript in ES2020.
 
 It is denoted with a question mark and a dot **?.**
 

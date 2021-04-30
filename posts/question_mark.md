@@ -4,7 +4,7 @@ date: '2021-04-24'
 spoiler: 'Nullish coalescing operator ??'
 ---
 
-This operator is a newer addition to JavaScript, introduced in ES2020.
+The **Nullish Coalescing** operator is a newer addition to JavaScript, introduced in ES2020.
 
 It is denoted with two question marks  **??**.
 
